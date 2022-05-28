@@ -1,0 +1,47 @@
+.view {
+    &>header {
+        line-height: 66px;
+        background-color: #dbe7f0;
+        font-weight: 800;
+        font-size: 20px;
+        padding-left: 20px;
+        position: relative;
+
+        &::after {
+            background-image: url('./images/icon_sprite.png');
+            background-position: -132px 0;
+            display: inline-block;
+            width: 44px;
+            height: 44px;
+            position: absolute;
+            content: " ";
+            right: 11px;
+            top: 11px;
+        }
+    }
+
+    &>ul {
+        column-count: 3;
+
+        &>li {
+            break-inside: avoid;
+            list-style-type: none;
+            padding: 20px;
+
+            &>h2 {
+                &>a {
+                    color: #036;
+                    background-image: url(./images/header-link.gif);
+                    background-repeat: no-repeat;
+                    background-position: right center;
+                    padding-right: 20px;
+                    font-size: 20px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

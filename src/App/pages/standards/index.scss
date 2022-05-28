@@ -1,0 +1,40 @@
+.view {
+    ul {
+        margin-left: 0;
+
+        &>li {
+            position: relative;
+            list-style-type: none;
+            padding-left: 70px;
+
+            &>h2 {
+                &>a {
+                    color: #036;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            &>p {}
+
+            &::before {
+                background-image: url('./images/icon_sprite.png');
+                position: absolute;
+                content: " ";
+                display: inline-block;
+                width: 44px;
+                height: 44px;
+                left: 0;
+                top: 10px;
+            }
+
+            &.webdesign {
+                &::before {
+                    background-position: -132px 0;
+                }
+            }
+        }
+    }
+}
